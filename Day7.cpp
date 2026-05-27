@@ -329,4 +329,75 @@ list.reverse();
 list.output();
 }
 
+// // Predefined
+// #include<iostream>
+// #include<list>
+// using namespace std;
+// void output(list<int> &lst) {
+// for(int i:lst) {
+// cout<<i<<" ";
+// }
+// cout << endl;
+// }
+// int main() {
+// list<int> lst;
+// lst.push_front(10);   //add First
+// lst.push_front(20);  
+// lst.push_front(30);
+// output(lst);
+// lst.push_back(40);     //add Last
+// lst.push_back(50);
+// lst.push_back(60);
+// lst.push_back(70);
+// output(lst);
+// auto i = lst.begin();
+// advance(i, 2);        //inc | dec
+// lst.insert(i, 100);   // add Before
+// output(lst);
+// lst.pop_front();      //del First
+// output(lst);
+// lst.pop_front();
+// lst.pop_back();       //del last
+// output(lst);
+// lst.erase(i);
+// output(lst);
+// lst.reverse();
+// output(lst);
+// cout << lst.size() << endl;
+// lst.sort();
+// output(lst);
+// lst.front();       //first element
+// lst.back();       //last element
+// output(lst);
+// }
+
+// #include<iostream>
+// #include<forward_list>
+// using namespace std;
+// void output(forward_list<int> &lst) {
+// for(int i:lst) {
+// cout<<i<<" ";
+// }
+// cout << endl;
+// }
+// int main() {
+// forward_list<int> lst;
+// lst.push_front(10); //add First
+// lst.push_front(20);
+// lst.push_front(30);
+// lst.push_front(40);
+// lst.push_front(50);
+// output(lst);
+// auto i = lst.begin();
+// advance(i, 2);
+// lst.insert_after(i,100); //add After
+// output(lst);
+// lst.pop_front(); //del first
+// output(lst);
+// lst.erase_after(i); // del after
+// output(lst);
+// lst.reverse();
+// output(lst);
+// }
+
 
